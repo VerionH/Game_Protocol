@@ -1,0 +1,90 @@
+.wrapper-section3 {
+    width: 100%;
+    height: 70vh;
+    min-height: 580px;
+    position: relative;
+    overflow: hidden;
+
+
+    .background-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+
+        height: 100%;
+    }
+
+
+    .content {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 40px;
+
+        .top {
+            padding: 40px;
+            .item1 {
+                .title-line1 {
+                    color: white;
+                    font-size: 2.1rem;
+                    line-height: 1.99880072em;
+                    letter-spacing: 0.025em;
+                }
+
+                .title-line2 {
+                    font-size: 1.4rem;
+                    line-height: 1.13107671em;
+                    letter-spacing: 0.025em;
+                }
+
+            }
+        }
+
+        .bottom {
+            position: relative;
+
+            .email-wrapper {
+                padding: 40px;
+                padding-bottom: 120px;
+
+                span {
+                    color: white;
+                    font-size: 1.4rem;
+                    line-height: 1.13107671em;
+                    letter-spacing: 0.025em;
+                }
+            }
+
+            .bottom-logo-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    position: absolute;
+                    bottom: -220px;
+                    width: 580px;
+                    height: 580px;
+                    @media (max-width: 767px) {
+                        max-width: 580px;
+                        max-height: 580px;
+                        width: 100vw;
+                        height: 100vw;
+
+                        bottom: -120px;
+                    }
+                }
+            }
+        }
+    }
+}
